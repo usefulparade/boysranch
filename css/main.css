@@ -5,6 +5,8 @@
 
 body {
     background: #FFF1E8;
+    height: 100vh;
+    width: 100vw;
     /* background-image: url(../assets/blob.png);
     background-position: center;
     background-repeat: no-repeat; */
@@ -25,8 +27,14 @@ body {
 }
 
 .container {
+    display: block;
+    position: relative;
     width: 100%;
-    height:100%;
+    min-height: 100%;
+}
+
+.container#spotify {
+    min-height: 66%;
 }
 
 .top {
@@ -81,6 +89,7 @@ body {
     display: block;
     position: relative;
     max-width: 612px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -88,11 +97,14 @@ body {
 
 .social {
     display: block;
-    position: relative;
+    position: fixed;
+    bottom: 8px;
+    right: 24px;
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
-    float: right;
+    z-index: 10;
+
 }
 .social img {
     image-rendering: pixelated;
@@ -119,13 +131,14 @@ body {
 .by {
     display: block;
     position: relative;
-    float: left;
+    /* text-align: center; */
+    float: right;
     max-width: 50%;
     line-height: 3em;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0px;
-    font-size: 0.5em;
+    font-size: 0.75em;
     color: #83769C;
 }
 
@@ -157,10 +170,27 @@ body {
     color: #83769C;
 }
 
+.spotify iframe {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    padding: 10px;
+    border-color: #00E436;
+    background-color: #00E436;
+    border-radius: 0px;
+}
+
 
 @media only screen and (max-width:712px){
+
     .container {
         max-width: 100%;
+    }
+
+    .container#game{
+        min-height:50%;
     }
     .game {
         display: none;
@@ -178,6 +208,9 @@ body {
 
     .by {
         padding-left: 2px;
+        padding-right: 24px;
+        /* float: none; */
+        /* text-align: center; */
     }
 }
 
