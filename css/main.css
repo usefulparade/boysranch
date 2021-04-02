@@ -36,6 +36,9 @@ body {
 .container#spotify {
     min-height: 66%;
 }
+.container#twitter {
+    min-height: 66%;
+}
 
 .top {
     display: block;
@@ -180,8 +183,41 @@ body {
     border-color: #00E436;
     background-color: #00E436;
     border-radius: 0px;
+    transform:rotate(5deg);
 }
 
+.twitterblock{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 300px;
+    padding: 10px;
+    border-color: #fff1e8;
+    background-color: #fff1e8;
+    border-radius: 0px;
+    transform:rotate(-2deg);
+    overflow: hidden;
+}
+
+.twitterblock iframe {
+    /* display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 300px;
+    padding: 10px;
+    border-color: #fff1e8;
+    background-color: #fff1e8;
+    border-radius: 0px;
+    transform:rotate(-5deg);
+    overflow: hidden; */
+    /* height: 380px; */
+    overflow: hidden;
+    
+}
 
 @media only screen and (max-width:712px){
 
